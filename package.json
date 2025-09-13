@@ -1,0 +1,14 @@
+{
+  "name": "nextflow-website-github-instruction2",
+  "version": "1.0.0",
+  "description": "เว็บไซต์เปิดตัวโทรศัพท์สีชาเย็น",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "npx serve src"
+  },
+  "author": "ploypilin17",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

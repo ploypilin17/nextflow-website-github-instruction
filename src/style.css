@@ -1,0 +1,288 @@
+/* --- UI Enhancement: Mint Pastel Theme --- */
+body {
+    background: linear-gradient(135deg, #eaffea 0%, #b2f7ef 100%);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+header {
+    background: linear-gradient(90deg, #a8e6cf 60%, #dcedc8 100%);
+    padding: 2rem 0 1.2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 16px #b2dfdb;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2.5px;
+    text-shadow: 0 2px 8px #b2dfdb;
+}
+nav a {
+    color: #388e3c;
+    background: #e0f2f1;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.4rem 1.1rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 1px 4px #b2dfdb33;
+}
+nav a:hover {
+    background: #b2f7ef;
+    color: #2e7d32;
+    text-decoration: underline;
+}
+main {
+    max-width: 700px;
+    margin: 2.5rem auto 4.5rem auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px #b2dfdb99;
+    padding: 2.5rem 2rem;
+    animation: fadeIn 1.2s;
+}
+section h2 {
+    color: #43a047;
+    margin-top: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 4px #b2dfdb55;
+}
+img {
+    display: block;
+    margin: 1.5rem auto 2rem auto;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px #b2dfdb99;
+    border: 4px solid #a8e6cf;
+    background: #eaffea;
+    max-width: 340px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+}
+ul li {
+    margin-bottom: 0.7rem;
+    font-size: 1.15rem;
+    background: #e0f2f1;
+    padding: 0.7rem 1.2rem;
+    border-radius: 16px;
+    box-shadow: 0 1px 4px #b2dfdb33;
+    color: #388e3c;
+    font-weight: 500;
+}
+/* Catalog grid and product cards */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+.product-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #b2dfdb88;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.product-media {
+    padding: 1rem;
+    background: #eaffea;
+    border-bottom: 1px solid #e0f2f1;
+}
+.product-media.pink { background: #ffeef3; }
+.product-media.mint { background: #eaffea; }
+.product-media.white { background: #f7f9fb; }
+.product-body { padding: 1rem 1rem 1.2rem 1rem; }
+.product-body h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2e7d32;
+}
+.specs { margin: 0 0 0.7rem 0; padding: 0; list-style: none; }
+.specs li {
+    background: #f1fff8;
+    margin: 0.35rem 0;
+    padding: 0.45rem 0.7rem;
+    border-radius: 10px;
+    font-size: 0.98rem;
+}
+.colors { display: flex; gap: 8px; margin: 0.6rem 0 0.8rem 0; }
+.color-dot {
+    width: 16px; height: 16px; border-radius: 50%; background: var(--c, #98e0c1);
+    display: inline-block; box-shadow: 0 1px 3px #b2dfdb99;
+}
+.price { color: #1b5e20; font-weight: 700; margin-bottom: 0.8rem; }
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #fff; text-decoration: none; font-weight: 600;
+    padding: 0.5rem 1rem; border-radius: 12px; box-shadow: 0 2px 8px #b2dfdb55;
+}
+footer {
+    text-align: center;
+    padding: 1.2rem 0 1.1rem 0;
+    background: linear-gradient(90deg, #a8e6cf 60%, #dcedc8 100%);
+    color: #388e3c;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1.05rem;
+    box-shadow: 0 -2px 12px #b2dfdb55;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+form {
+    background: #f1fff1;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px #b2dfdb44;
+    padding: 1.5rem 1.2rem 1rem 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+input[type="text"], input[type="email"], textarea {
+    border: 1.5px solid #a8e6cf;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+    margin-bottom: 0.5rem;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 2px solid #43a047;
+    outline: none;
+}
+button[type="submit"] {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: not-allowed;
+    box-shadow: 0 2px 8px #b2dfdb55;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+}
+@media (max-width: 600px) {
+    main {
+        padding: 0.7rem;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    section h2 {
+        font-size: 1.1rem;
+    }
+    img {
+        max-width: 90vw;
+    }
+    .catalog-grid { grid-template-columns: 1fr; }
+    footer {
+        font-size: 0.95rem;
+        padding: 0.7rem 0 0.7rem 0;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    font-family: 'Sarabun', Arial, sans-serif;
+    background: #eaffea;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #a8e6cf;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px #c8e6c9;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    color: #388e3c;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #388e3c;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #b2dfdb;
+    padding: 2rem;
+}
+
+section h2 {
+    color: #43a047;
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px #b2dfdb;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #a8e6cf;
+    color: #388e3c;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+    section h2 {
+        font-size: 1.1rem;
+    }
+}

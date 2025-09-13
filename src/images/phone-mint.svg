@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360" height="640" viewBox="0 0 360 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="360" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8E6CF"/>
+      <stop offset="1" stop-color="#B2F7EF"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#43E97B"/>
+      <stop offset="1" stop-color="#38F9D7"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#9adbd1" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <!-- Phone body -->
+  <rect x="30" y="20" rx="36" ry="36" width="300" height="600" fill="url(#bodyGrad)" filter="url(#cardShadow)"/>
+  <!-- Camera island -->
+  <rect x="52" y="40" rx="14" width="68" height="140" fill="#8CD9C5"/>
+  <circle cx="86" cy="72" r="16" fill="#2E7D32"/>
+  <circle cx="86" cy="116" r="16" fill="#2E7D32"/>
+  <circle cx="86" cy="160" r="16" fill="#2E7D32"/>
+  <circle cx="86" cy="72" r="7" fill="#C8E6C9"/>
+  <circle cx="86" cy="116" r="7" fill="#C8E6C9"/>
+  <circle cx="86" cy="160" r="7" fill="#C8E6C9"/>
+  <!-- Screen -->
+  <rect x="50" y="100" rx="22" width="260" height="460" fill="#F8FFFB" stroke="#A8E6CF"/>
+  <rect x="62" y="112" rx="16" width="236" height="364" fill="#E8FFF6"/>
+  <!-- Mint waves on screen -->
+  <path d="M62 280 C120 250, 180 310, 236 280 C272 260, 298 300, 298 300 L298 476 L62 476 Z" fill="#CCF5E8"/>
+  <path d="M62 330 C120 300, 180 360, 236 330 C272 310, 298 350, 298 350 L298 476 L62 476 Z" fill="#BDEFE1"/>
+  <!-- Speaker notch -->
+  <rect x="160" y="90" rx="3" width="40" height="6" fill="#66BB6A"/>
+  <!-- CTA button mock -->
+  <rect x="110" y="496" rx="12" width="140" height="42" fill="url(#btnGrad)"/>
+  <text x="180" y="523" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Mint Phone</text>
+  <!-- Caption -->
+  <text x="180" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#2E7D32">หน้าจอ 6.5 นิ้ว</text>
+  <text x="180" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#2E7D32">กล้องหลัง 3 ตัว • แบต 5000mAh</text>
+</svg>
